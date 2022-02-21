@@ -1,0 +1,18 @@
+.ancard-container{
+  width: 90%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black ;
+  background-color: rgba(135,206,250, 0.6);
+}
+
+.ancard-button-custom{
+  width: 100% !important;
+  height: 100% !important;
+}
+.ancard-button-custom:hover{
+  background-color: rgba(135,206,250, 1) !important;
+}

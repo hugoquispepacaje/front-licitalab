@@ -1,0 +1,16 @@
+export default {
+  URL_API : 'http://localhost:3000',
+  STATUS_LOADING: 1,
+  STATUS_OK: 2, 
+  ACTIVE: true,
+  INACTIVE: false,
+  STATE_TODAY: 1,
+  STATE_PENDING: 2,
+  STATE_EXPIRED:3,
+  MODE_CREATE: 1,
+  MODE_UPDATE: 2, 
+  ORDER_DEFAULT: 0,
+  ORDER_CREATE: 1,
+  ORDER_EXPIRED: 2,
+  ORDER_STATE: 3, 
+}
