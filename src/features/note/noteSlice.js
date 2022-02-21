@@ -61,6 +61,9 @@ export const noteSlice = createSlice({
   reducers: {
     changeNotesSelected: (state, action) => {
       state.notesSelected = action.payload;
+    },
+    changeNoteOrder: (state, action) => {
+      state.noteOrder = action.payload;
     }
   },
   extraReducers: (builder) => {
@@ -104,12 +107,14 @@ export const noteSlice = createSlice({
   },
 });
 
-export const { changeNotesSelected } = noteSlice.actions;
+export const { changeNotesSelected, changeNoteOrder } = noteSlice.actions;
 
 export const selectNotes = (state) => state.note.notes;
 
 export const selectLoadingModal = (state) => state.note.loadingModal;
 
 export const selectNotesSelected = (state) => state.note.notesSelected;
+
+export const selectNoteOrder = (state) => state.note.noteOrder;
 
 export default noteSlice.reducer;
